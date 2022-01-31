@@ -1,6 +1,5 @@
 $("div").children('img').click( function(e){
     var target = $( e.target );   
-    console.log(target)
     if($(target).hasClass('img1')){
         $('.main_pic').css('background-image', 'url("../src/mouse1.png")')
     }else if ((target).hasClass('img2')){
