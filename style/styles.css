@@ -1,3 +1,7 @@
+:root {
+  --mainColor: #00DE00;
+}
+
 html {
   margin: 0;
   padding: 0;
@@ -47,7 +51,7 @@ body nav ul li a {
   position: relative;
 }
 body nav ul li a:hover {
-  color: #00DE00;
+  color: var(--mainColor);
   transition: 0.5s;
 }
 body nav ul li a:after {
@@ -56,7 +60,7 @@ body nav ul li a:after {
   position: absolute;
   height: 5px;
   border-radius: 2px;
-  background-color: #00DE00;
+  background-color: var(--mainColor);
   top: 1.7rem;
   left: 0;
   transition: 0.4s;
@@ -67,9 +71,9 @@ body nav ul li a:hover:after {
 body nav ul button {
   margin-left: 2rem;
   margin-top: -1.2rem;
-  background: #00DE00;
+  background: var(--mainColor);
   color: #111111;
-  border: 1px solid #00DE00;
+  border: 1px solid var(--mainColor);
   font-weight: 600;
   padding: 1rem 2rem;
   border-radius: 0.4rem;
@@ -79,7 +83,7 @@ body nav ul button {
   transition: 0.2s;
 }
 body nav ul button:hover {
-  color: #00DE00;
+  color: var(--mainColor);
   background: transparent;
 }
 body section {
@@ -98,10 +102,10 @@ body section #pics_product .mini_pics div {
   height: 120px;
 }
 body section #pics_product .mini_pics div:hover {
-  border-left: 10px solid #00DE00;
+  border-left: 10px solid var(--mainColor);
 }
 body section #pics_product .mini_pics div:active {
-  border-left: 10px solid #00DE00;
+  border-left: 10px solid var(--mainColor);
 }
 body section #pics_product .mini_pics img {
   border: 10px solid transparent;
@@ -144,7 +148,7 @@ body section #details_product .infos_product * {
 body section #details_product .infos_product h1 {
   font-weight: 600;
   font-size: 3rem;
-  color: #00DE00;
+  color: var(--mainColor);
 }
 body section #details_product .infos_product p {
   color: #B5B5B5;
@@ -175,28 +179,28 @@ body section #details_product .options_product select:before {
   width: 100%;
 }
 body section #details_product .options_product select:hover {
-  border: 1px solid #00DE00;
+  border: 1px solid var(--mainColor);
 }
 body section #details_product .options_product select:active {
-  border: 1px solid #00DE00;
+  border: 1px solid var(--mainColor);
 }
 body section #details_product .options_product select a:visited {
-  border: 1px solid #00DE00;
+  border: 1px solid var(--mainColor);
 }
 body section #details_product .options_product select option {
   background: #111111;
   padding: 10rem 0;
 }
 body section #details_product .options_product select option:focus {
-  background: #00DE00;
+  background: var(--mainColor);
 }
 body section #details_product .options_product div:last-child select {
   padding-right: 5rem;
 }
 body section #details_product button {
-  background: #00DE00;
+  background: var(--mainColor);
   color: #111111;
-  border: 1px solid #00DE00;
+  border: 1px solid var(--mainColor);
   font-weight: 600;
   padding: 1rem 2rem;
   border-radius: 0.4rem;
@@ -207,13 +211,13 @@ body section #details_product button {
   margin-right: 2.5rem;
 }
 body section #details_product button:hover {
-  color: #00DE00;
+  color: var(--mainColor);
   background: transparent;
 }
 body section #details_product button:last-child {
-  color: #00DE00;
+  color: var(--mainColor);
   background-color: transparent;
 }
 body footer a {
-  color: #00DE00;
+  color: var(--mainColor);
 }/*# sourceMappingURL=styles.css.map */

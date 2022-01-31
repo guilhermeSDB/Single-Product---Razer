@@ -1,13 +1,13 @@
-$verde: #00DE00;
 $preto: #111111;
 $branco: #F3F3F3;
 $cinza:#B5B5B5;
 $bg-body:#2A2A2A;
 
+
 @mixin buttonRazer{
-    background: $verde;
+    background: var(--mainColor);
     color: $preto;
-    border: 1px solid $verde;    
+    border: 1px solid var(--mainColor);    
     font-weight: 600;
     padding: 1rem 2rem;
     border-radius: .4rem;
@@ -17,9 +17,14 @@ $bg-body:#2A2A2A;
     transition: 0.2s;
 
     &:hover{
-        color: $verde;
+        color: var(--mainColor);
         background: transparent;
     }
+}
+
+
+:root{
+    --mainColor: #00DE00;
 }
 
 html{
@@ -69,7 +74,7 @@ body{
                 a{
                     position: relative;
                     &:hover{
-                        color: $verde;     
+                        color: var(--mainColor);     
                         transition: 0.5s;               
                     }
                     
@@ -79,7 +84,7 @@ body{
                         position: absolute;
                         height: 5px;
                         border-radius: 2px;
-                        background-color: $verde;
+                        background-color: var(--mainColor);
                         top: 1.7rem;
                         left: 0;
                         transition: 0.4s;
@@ -118,11 +123,11 @@ body{
                     width: 120px;
                     height: 120px;
                     &:hover{
-                        border-left: 10px solid $verde;
+                        border-left: 10px solid var(--mainColor);
                     }
 
                     &:active{
-                        border-left: 10px solid $verde;
+                        border-left: 10px solid var(--mainColor);
                     }
                 }
 
@@ -177,7 +182,7 @@ body{
                 h1{
                     font-weight: 600;
                     font-size: 3rem;
-                    color: $verde
+                    color: var(--mainColor)
                 }              
 
                 p{
@@ -216,14 +221,14 @@ body{
                     }
 
                     &:hover{
-                        border: 1px solid $verde;
+                        border: 1px solid var(--mainColor);
                     }
 
                     &:active{
-                        border: 1px solid $verde;
+                        border: 1px solid var(--mainColor);
                     }
                     a:visited{
-                        border: 1px solid $verde;
+                        border: 1px solid var(--mainColor);
                     }
 
                     option{
@@ -231,7 +236,7 @@ body{
                         padding: 10rem 0;
 
                         &:focus{
-                            background: $verde;
+                            background: var(--mainColor);
                         }
                     }
                 }
@@ -252,7 +257,7 @@ body{
             }
 
             button:last-child{
-                color: $verde;
+                color: var(--mainColor);
                 background-color: transparent;
             }
         }
@@ -261,7 +266,7 @@ body{
 
     footer{
         a{
-            color: $verde;
+            color: var(--mainColor);
         }
     }
 }
