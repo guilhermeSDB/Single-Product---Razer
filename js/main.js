@@ -30,7 +30,6 @@ $("div").children('img').click( function(e){
     else if ((target).hasClass('img4')){
         $('.main_pic').css('background-image','url("./src/mouse4.png")')
         setColor('img.img4')
-        document.documentElement.style.setProperty('--mainColor', 'Crimson');
     }
 
 })
