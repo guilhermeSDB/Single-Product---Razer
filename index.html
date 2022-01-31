@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="src/razer-ico.png">
+    <link rel="stylesheet" href="style/styles.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <title>Index - Razer Product</title>
+</head>
+<body class="max-w-screen h-screen">
+    <nav>
+        <div id="logo">           
+            <img src="src/logo.png" alt="Razer Logo" width="250">
+        </div>
+        <ul>
+            <li><a href="#">mice</a></li>
+            <li><a href="#">keyboards</a></li>
+            <li><a href="#">headsets</a></li>
+            <li><a href="#">laptops</a></li>
+            <button>need help?</button>
+        </ul>
+    </nav>
+    <section class="grid md:grid-cols-2 grid-cols-1 max-w-screen">
+        <div id="pics_product" class="max-w-screen max-h-screen">
+            <div class="mini_pics">
+                <div>
+                    <img class="img1" src="src/mouse1.png" alt="">
+                </div>
+                <div>
+                    <img class="img2" src="src/mouse2.png" alt="">
+                </div>
+                <div>
+                    <img class="img3" src="src/mouse3.png" alt="">
+                </div>
+                <div>
+                    <img class="img4" src="src/mouse4.png" alt="">
+                </div>
+            </div>
+            <div class="main_pic">
+                <!-- <img class="mainImage" src="src/mouse1.png" alt="image fundo" width="300"> -->
+            </div>
+           
+            
+        </div>
+        <div id="details_product" class="">
+            <div class="infos_product">
+                <h1>Razer Viper 8KHz</h1>
+                <p>Ambidextrous Esports Gaming Mouse With 8000Hz Polling Rate</p>
+                <h3>US$149.99</h3>                
+            </div>
+            <div class="options_product">
+                <div>
+                    <select name="model" id="model_product">
+                        <option value="viperUltimate">Viper Ultimate 8KHz - Wired</option>                    
+                    </select>
+                </div>
+                <div>
+                    <select name="color" id="color_product">
+                        <option value="black">Black</option>
+                        <option value="white">White</option>
+                        <option value="rose">Rose</option>
+                        <option value="yellow">Yellow</option>
+                    </select>
+                </div>
+                
+                
+            </div>
+            <div class="buttons_product">
+                <button>add to cart</button>
+                <button>save for later</button>
+            </div>
+        </div>
+    </section>
+
+    <footer class="text-center">
+        Made by <a href="https://github.com/guilhermeSDB" target="_blank" rel="noopener noreferrer">Guilherme Barros</a> 
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
