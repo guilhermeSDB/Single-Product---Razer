@@ -128,7 +128,7 @@ body{
         align-items: center;
         padding: 5rem 0;
 
-        @media screen and (max-width: 768px) { margin: 0rem; flex-direction: column; }
+        @media screen and (max-width: 768px) { margin: 0rem; flex-direction: column; padding-top: 1rem !important;}
 
         #pics_product, #details_product{
             width: 50%;
@@ -175,22 +175,20 @@ body{
                 background-repeat: no-repeat; 
                 background-size: contain;
                 background-position: center;
-                width: 550px;
-                height: 550px;
+                width: 35rem;
+                height: 35rem;
                 position: relative;
 
-                // img{
-                //     transition: 0.3s;  
-                //     width: 250px;  
-                //     height: 250px;
-                //     object-fit: fill;
-                // }
+                @media screen and (max-width: 375px) { width: 25rem; height: 25rem;}
+
             }
 
             .tooltips{
                 display: block;
                 position: relative;
                 left: 1.2rem;
+
+                @media screen and (max-width: 400px) { display: none!important}
             
                 &.inativo{
                     display: none;
@@ -315,7 +313,8 @@ body{
                     border-radius: .4rem;
                     letter-spacing: 3px;
 
-                    @media screen and (max-width: 1024px) { width: 100%;}
+                    @media screen and (max-width: 1024px) { width: 100%; font-size: 1rem;}
+                    @media screen and (max-width: 325px) { font-size: .8rem;}
 
                     *{
                         margin: 1rem 0
@@ -365,7 +364,7 @@ body{
                 button{
                     @include buttonRazer;
 
-                    @media screen and (max-width: 375px) { font-size: .65rem;}
+                    @media screen and (max-width: 375px) { font-size: .65rem; padding: 0.5rem 1rem;}
                 }
                 
                 button:last-child{

@@ -132,6 +132,7 @@ body section {
   body section {
     margin: 0rem;
     flex-direction: column;
+    padding-top: 1rem !important;
   }
 }
 body section #pics_product, body section #details_product {
@@ -189,14 +190,25 @@ body section #pics_product .main_pic {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
-  width: 550px;
-  height: 550px;
+  width: 35rem;
+  height: 35rem;
   position: relative;
+}
+@media screen and (max-width: 375px) {
+  body section #pics_product .main_pic {
+    width: 25rem;
+    height: 25rem;
+  }
 }
 body section #pics_product .tooltips {
   display: block;
   position: relative;
   left: 1.2rem;
+}
+@media screen and (max-width: 400px) {
+  body section #pics_product .tooltips {
+    display: none !important;
+  }
 }
 body section #pics_product .tooltips.inativo {
   display: none;
@@ -315,6 +327,12 @@ body section #details_product .options_product select {
 @media screen and (max-width: 1024px) {
   body section #details_product .options_product select {
     width: 100%;
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 325px) {
+  body section #details_product .options_product select {
+    font-size: 0.8rem;
   }
 }
 body section #details_product .options_product select * {
@@ -370,6 +388,7 @@ body section #details_product .buttons_product button:hover {
 @media screen and (max-width: 375px) {
   body section #details_product .buttons_product button {
     font-size: 0.65rem;
+    padding: 0.5rem 1rem;
   }
 }
 body section #details_product .buttons_product button:last-child {
