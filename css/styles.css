@@ -32,6 +32,7 @@ body {
   font-family: "Poppins", sans-serif;
   letter-spacing: 3px;
   padding: 0 10rem;
+  overflow-x: hidden;
 }
 @media screen and (max-width: 768px) {
   body {
@@ -179,6 +180,12 @@ body section #pics_product .mini_pics img {
     height: 75px;
   }
 }
+@media screen and (max-width: 325px) {
+  body section #pics_product .mini_pics img {
+    width: 65px;
+    height: 65px;
+  }
+}
 body section #pics_product .mini_pics img:hover {
   box-shadow: -12px 0px 0 var(--mainColor);
 }
@@ -194,16 +201,16 @@ body section #pics_product .main_pic {
   height: 35rem;
   position: relative;
 }
-@media screen and (max-width: 320px) {
-  body section #pics_product .main_pic {
-    width: 15rem;
-    height: 15rem;
-  }
-}
 @media screen and (max-width: 425px) {
   body section #pics_product .main_pic {
     width: 20rem;
     height: 20rem;
+  }
+}
+@media screen and (max-width: 320px) {
+  body section #pics_product .main_pic {
+    width: 15rem;
+    height: 15rem;
   }
 }
 body section #pics_product .tooltips {
