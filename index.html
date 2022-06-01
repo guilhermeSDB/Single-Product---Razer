@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="src/razer-ico.png">
-    <link rel="stylesheet" href="style/styles.css">
+    <link rel="stylesheet" href="css/styles.css">
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,12 +13,12 @@
 
     <title>Index - Razer Product</title>
 </head>
-<body class="max-w-screen h-screen">
+<body>
     <nav>
         <div id="logo">           
-            <img src="src/logo.png" alt="Razer Logo" width="250">
+            <img class="w-40" src="src/logo.png" alt="Razer Logo">
         </div>
-        <ul>
+        <ul class="hidden lg:flex">
             <li><a href="#">mice</a></li>
             <li><a href="#">keyboards</a></li>
             <li><a href="#">headsets</a></li>
@@ -26,26 +26,34 @@
             <button>need help?</button>
         </ul>
     </nav>
-    <section class="grid md:grid-cols-2 grid-cols-1 max-w-screen">
-        <div id="pics_product" class="max-w-screen max-h-screen">
+    <section>
+        <div id="pics_product">
             <div class="mini_pics">
-                <div>
-                    <img class="img1" src="src/mouse1.png" alt="">
-                </div>
-                <div>
-                    <img class="img2" src="src/mouse2.png" alt="">
-                </div>
-                <div>
-                    <img class="img3" src="src/mouse3.png" alt="">
-                </div>
-                <div>
-                    <img class="img4" src="src/mouse4.png" alt="">
-                </div>
+                <img class="img1" src="src/img1.png" alt="">
+                <img class="img2" src="src/img2.png" alt="">
+                <img class="img3" src="src/img3.png" alt="">
+                <img class="img4" src="src/img4.png" alt="">
             </div>
             <div class="main_pic">
-                <!-- <img class="mainImage" src="src/mouse1.png" alt="image fundo" width="300"> -->
+                <div class="tooltips">
+                    <div class="tooltip_dot tp1_dot">
+                        <p class="tooltip_text">Braided Cable</p>
+                    </div>
+    
+                    <div class="tooltip_dot tp2_dot">
+                        <p class="tooltip_text">Switch Óptico</p>
+                    </div>   
+    
+                    <div class="tooltip_dot tp3_dot">
+                        <p class="tooltip_text">60G Ultra Leve</p>
+                    </div>               
+    
+                    <div class="tooltip_dot tp4_dot">
+                        <p class="tooltip_text">Razer Chroma</p>
+                    </div>
+                </div>
             </div>
-           
+
             
         </div>
         <div id="details_product" class="">
@@ -83,6 +91,7 @@
     <footer class="text-center">
         Made by <a href="https://github.com/guilhermeSDB" target="_blank" rel="noopener noreferrer">Guilherme Barros</a> 
     </footer>
+
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="js/main.js"></script>
