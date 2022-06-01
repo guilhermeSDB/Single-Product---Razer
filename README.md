@@ -8,9 +8,9 @@
 
 O projeto ainda está em desenvolvimento e as próximas atualizações serão voltadas nas seguintes tarefas:
 
-- [ ] Responsividade
+- [x] Responsividade
 - [ ] Novos estilos (Imagens, cores etc)
-- [ ] Interatividade
+- [x] Interatividade
 - [ ] Carrinho de Compras 
 
 ## 🚀 Instalando Single Product Razer
