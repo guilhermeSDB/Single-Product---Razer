@@ -194,10 +194,16 @@ body section #pics_product .main_pic {
   height: 35rem;
   position: relative;
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 320px) {
   body section #pics_product .main_pic {
-    width: 25rem;
-    height: 25rem;
+    width: 15rem;
+    height: 15rem;
+  }
+}
+@media screen and (max-width: 425px) {
+  body section #pics_product .main_pic {
+    width: 20rem;
+    height: 20rem;
   }
 }
 body section #pics_product .tooltips {
